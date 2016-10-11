@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+}
+li, 
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: black;
+}
+body {
+	background-color: rgb(245,245,245);
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+}
+.intro-text,
+.portfolio-text,
+.contact-text {
+	font-family: 'Cormorant Garamond', serif;
+}
+.left {
+	float: left;
+}	
+.right {
+	float: right;
+}
+
+/**********HEADER**********************/
+header {
+	font-family: 'Oswald', sans-serif;
+}
+.header-name {
+	font-size: 5em;
+	margin: 1em 0;
+}
+.header-nav {
+	list-style: none;
+	font-size: 3em;
+	margin: 0 40px 100px;
+	padding: 0;
+}
+.header-nav li {
+	background-color: white;
+	padding: 20px 0;
+	margin: 10px 0;
+}
+.header-nav a {
+	color: black;
+}
+
+/**********INTRO**********************/
+.profile-picture {
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+}
+.intro-text {
+	margin: 75px 40px 125px;
+}
+
+/**********PORTFOLIO**********************/
+.portfolio-wrapper {
+	background-color: white;
+	padding: 5px 0;
+}
+.portfolio-items {
+	padding: 0 40px;
+}
+.portfolio-images {
+	width: 100%;
+	padding: 0 0 40px;
+}
+#portfolio-link {
+	margin: 130px 0;
+	font-family: 'Oswald', sans-serif;
+
+}
+.portfolio-text {
+	padding: 0 0 70px;
+}
+.portfolio-headers {
+	font-family: 'Oswald', sans-serif;
+	padding: 20px 0;
+}
+
+/**********Contact**********************/
+.contact-wrapper {
+	padding: 80px 40px;
+}
+#contact-link {
+	padding-bottom: 50px;
+}
+.contact-text {
+	padding-bottom: 40px;
+}
+.my-phone span,
+.my-email span {
+	margin: .7em;
+}
+
+/**********Footers**********************/
+
+footer {
+	border-top: 2px solid grey;
+	margin: 40px;
+	padding-top: 40px;
+	font-size: 1.5em;
+}
+.footer-nav {
+	display: none;
+}
+
+
+/**********Clearfix**********************/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
