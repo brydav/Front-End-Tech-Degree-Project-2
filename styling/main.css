@@ -4,6 +4,7 @@
 li, 
 a {
 	text-decoration: none;
+	color: black;
 }
 a:visited {
 	color: black;
@@ -11,7 +12,12 @@ a:visited {
 body {
 	background-color: rgb(245,245,245);
 	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.2;
 	text-align: center;
+}
+h1 {
+	font-size: 1.3em;
 }
 .intro-text,
 .portfolio-text,
@@ -28,24 +34,23 @@ body {
 /**********HEADER**********************/
 header {
 	font-family: 'Oswald', sans-serif;
+	margin: 0 0 30px;
 }
 .header-name {
-	font-size: 5em;
 	margin: 1em 0;
 }
 .header-nav {
 	list-style: none;
-	font-size: 3em;
-	margin: 0 40px 100px;
 	padding: 0;
 }
 .header-nav li {
 	background-color: white;
-	padding: 20px 0;
+	padding: 10px 0;
 	margin: 10px 0;
 }
 .header-nav a {
-	color: black;
+	width: 100%;
+	display: block;
 }
 
 /**********INTRO**********************/
@@ -55,7 +60,8 @@ header {
 	margin: 0 auto;
 }
 .intro-text {
-	margin: 75px 40px 125px;
+	margin: 20px;
+	;
 }
 
 /**********PORTFOLIO**********************/
@@ -64,19 +70,18 @@ header {
 	padding: 5px 0;
 }
 .portfolio-items {
-	padding: 0 40px;
+	padding: 0 20px;
 }
 .portfolio-images {
 	width: 100%;
-	padding: 0 0 40px;
 }
 #portfolio-link {
-	margin: 130px 0;
+	margin: 40px 0;
 	font-family: 'Oswald', sans-serif;
-
 }
 .portfolio-text {
-	padding: 0 0 70px;
+	padding: 0 0 30px;
+	margin: 0;
 }
 .portfolio-headers {
 	font-family: 'Oswald', sans-serif;
@@ -85,31 +90,30 @@ header {
 
 /**********Contact**********************/
 .contact-wrapper {
-	padding: 80px 40px;
+	margin: 0 20px 40px;
 }
 #contact-link {
-	padding-bottom: 50px;
+	margin: 40px 0;
 }
 .contact-text {
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 }
 .my-phone span,
 .my-email span {
-	margin: .7em;
+	margin-left: 20px;
 }
 
 /**********Footers**********************/
 
 footer {
-	border-top: 2px solid grey;
-	margin: 40px;
-	padding-top: 40px;
-	font-size: 1.5em;
+	border-top: 2px solid gray;
+	margin: 20px;
+	padding-top: 20px;
+	font-size: .7em;
 }
 .footer-nav {
 	display: none;
 }
-
 
 /**********Clearfix**********************/
 
@@ -117,4 +121,75 @@ footer {
   content: "";
   display: table;
   clear: both;
+}
+
+/**********Media Queries**********************/
+
+@media (min-width: 768px) {
+
+.header-name {
+	font-size: 3em;
+	margin-bottom: .5em;
+}
+.header-nav {
+	display: inline-block;
+	margin: 0 auto 75px;
+}
+.header-nav li {
+	background-color: rgb(245,245,245);
+	font-size: .75em;
+	float: left;
+	margin: 0 30px;
+}
+.intro-text {
+	text-align: left;
+	float: left;
+	width: 60%;
+	margin: 0;
+	padding: 0 30px;
+	font-size: 1.5em;
+}
+.profile-picture {
+	float: right;
+	width: 40%;
+	margin: 0;
+}
+.intro-wrapper {
+	padding-bottom: 70px;
+}
+#portfolio-link {
+	margin: 100px;
+}
+.portfolio-items {
+	float: left;
+	width: 50%;
+}
+.portfolio-text {
+	font-size: 1.5em;
+}
+.contact-wrapper {
+	padding: 40px;
+}
+#contact-link {
+	padding-bottom: 30px;
+}
+.contact-text {
+	max-width: 700px;
+	margin: auto;
+	font-size: 1.5em;
+}
+.to-top{
+	display: none;
+}
+footer {
+	font-size: .75em;
+}
+.footer-nav li {
+	padding-top: 0;
+}
+
+.footer-name {
+	margin: 0;
+}
+
 }
