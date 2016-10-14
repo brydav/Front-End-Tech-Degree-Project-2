@@ -4,13 +4,14 @@
 li, 
 a {
 	text-decoration: none;
-	color: black;
 }
+
 a:visited {
-	color: black;
+	color: white;
 }
+
 body {
-	background-color: rgb(245,245,245);
+	background-color: rgb(0,51,102);
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.2em;
 	line-height: 1.2;
@@ -34,6 +35,7 @@ h1 {
 /**********HEADER**********************/
 header {
 	font-family: 'Oswald', sans-serif;
+	color: white;
 	margin: 0 0 30px;
 }
 .header-name {
@@ -50,17 +52,24 @@ header {
 }
 .header-nav a {
 	width: 100%;
+	color: rgb(0,51,102);
 	display: block;
 }
 
 /**********INTRO**********************/
+.intro-wrapper {
+	padding: 0 20px 20px;
+}
 .profile-picture {
 	display: block;
 	width: 75%;
 	margin: 0 auto;
+	padding: 3px;
+	background-color: white;
 }
 .intro-text {
 	margin: 20px;
+	color: white;
 }
 
 /**********PORTFOLIO**********************/
@@ -87,16 +96,30 @@ header {
 	padding: 20px 0;
 }
 
-/**********Contact**********************/
-.contact-wrapper {
+/**********Skills & Contact**********************/
+.contact-wrapper,
+.skills-wrapper {
 	margin: 0 20px 40px;
+	color: white;
 }
-#contact-link {
+#contact-link,
+#skills-link {
 	margin: 40px 0;
 }
 .contact-text {
 	padding-bottom: 20px;
 }
+.skills-text {
+	padding: 0;
+}
+.skills-text li {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 1.3em;
+	display: inline-block;
+	list-style: none;
+	padding: 0 10px 10px;
+}
+
 .my-phone span,
 .my-email span {
 	margin-left: 20px;
@@ -105,10 +128,11 @@ header {
 /**********Footers**********************/
 
 footer {
-	border-top: 2px solid gray;
+	border-top: 2px solid white;
 	margin: 20px;
 	padding-top: 20px;
 	font-size: .7em;
+	color: white;
 }
 .footer-nav {
 	display: none;
@@ -133,20 +157,21 @@ footer {
 		margin: 0 auto;
 	}
 	.header-nav li {
-		background-color: rgb(245,245,245);
+		background-color: rgb(0,51,102);
 		float: left;
 		margin: 0 10px;
 		padding: 0;
 	}
 	.header-nav a {
 		padding: 20px;
+		color: white;
 	}
 	.intro-text {
 		text-align: left;
 		float: left;
 		width: 60%;
 		margin: 0;
-		padding: 0 20px;
+		padding-right: 20px;
 	}
 	.intro-text p {
 		margin: 0;
@@ -155,7 +180,6 @@ footer {
 		float: right;
 		width: 40%;
 		margin: 0;
-		padding-right: 20px;
 	}
 	.intro-wrapper {
 		padding-bottom: 50px;
@@ -164,7 +188,12 @@ footer {
 		float: left;
 		width: 50%;
 	}
-	.contact-text {
+	.image-7 {
+		float: none;
+		margin: 0 auto;
+	}
+	.contact-text,
+	.skills-text {
 		max-width: 600px;
 		margin: auto;
 	}
@@ -173,10 +202,21 @@ footer {
 	}
 	.footer-nav li {
 		padding-top: 0;
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 	.footer-name {
 		margin: 20px;
 	}
+	footer {
+		padding-top: 10px;
+	}
+
+}
+@media (min-width: 1024px) {
+
+	.portfolio-items {
+		width: 33.33%;
+	}
+
 
 }
