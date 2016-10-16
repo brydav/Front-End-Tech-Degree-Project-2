@@ -39,7 +39,7 @@ header {
 	margin: 0 0 30px;
 }
 .header-name {
-	margin: 1em 0;
+	margin: 1em;
 }
 .header-nav {
 	list-style: none;
@@ -131,7 +131,6 @@ footer {
 	border-top: 2px solid white;
 	margin: 20px;
 	padding-top: 20px;
-	font-size: .7em;
 	color: white;
 }
 .footer-nav {
@@ -213,6 +212,13 @@ footer {
 
 }
 @media (min-width: 1024px) {
+	.header-name {
+		float: left;
+	}
+	.header-nav {
+		float: right;
+		margin-top: 1em;
+	}
 
 	.portfolio-items {
 		width: 33.33%;
